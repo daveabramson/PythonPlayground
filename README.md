@@ -11,3 +11,8 @@ Things that I learned while creating this project:
 2. That splitting python code up into multiple projects is just as easy as other languages
 3. Python comes with a unit test module that is easy to use, so there is no excuse for un-unit-tested python code
 4. A basic Abstract Base Class with two children
+5. Basic dependency injection (without the dependency injector framework - which seems to be the popular choice in python)
+6. How to place tombstones so the help() function outputs their contents
+7. Multi-line statements - continue to the next line with \ (just like a C/C++ macro)
+8. Private methods are defined by double underscore in front of the name (ex: def __privateFunc(self))
+9. Looping through two lists in parallel using the zip() function (see TestCosineListMaker.py)
