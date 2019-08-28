@@ -2,18 +2,20 @@ from math import pi
 import numpy as np     # installed with matplotlib
 #import matplotlib.pyplot as plt
 from coslist import coslist
+from StepRangeSource import StepRangeSource
+from EvenCountRangeSource import EvenCountRangeSource
 
 
 def main():
     
     # Calculate cosines of some angles given in radians
     cosListMaker = coslist()
-    radCosList, radAngles, = cosListMaker.cosinesOfRadInRange(0, pi*2+.02, .01)
+    radCosList, radAngles = cosListMaker.CosinesOfRadianRange(StepRangeSource(0, 2.5*pi, pi/2))
 
     # Calculate cosines of some angles given in degrees
     degCosListMaker = coslist()
-    degCosList, degAngles, = cosListMaker.cosinesOfDegInRange(0, 380, 20)
-
+    #degCosList, degAngles = cosListMaker.CosinesOfDegreeRange(EvenCountRangeSource(0, 360, 5))
+    degCosList, degAngles = cosListMaker.CosinesOfDegreeRange(EvenCountRangeSource(0, 360, 37))
 
 
     print("cosines of angles in radians")

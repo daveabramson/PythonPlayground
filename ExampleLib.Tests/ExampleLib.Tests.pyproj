@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="TestCosineListMaker.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="TestEvenCountRangeSource.py">
       <SubType>Code</SubType>
     </Compile>
