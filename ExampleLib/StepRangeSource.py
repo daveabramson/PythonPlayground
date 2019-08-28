@@ -3,16 +3,39 @@ from numpy import arange
 
 
 class StepRangeSource(RangeSource):
-    """a range source that creates values in a range by step size and does not include the
-       end-point of the range. (It is a half-closed range [min,max) )"""
+    """
+       Description: a range source that creates values in a range by step size and does not include the end-point
+                    of the range. 
+       Notes:       (It is a half-closed range [min,max))
+    """
 
-    #init the class 
-    #init of super will call CalculateValuesInRange
+    #-------------------------------------------------------------------------------------------------------------
+    #                                              ____I N I T____
+    #-------------------------------------------------------------------------------------------------------------
     def __init__(self, min, max, step):
+        """
+           Purpose: Initialize the instance
+           Inputs:  min - see RangeSource
+                    max - see RangeSource
+                    step - interval between values in the range list
+           Outputs: None
+           Returns: None
+           Notes:   init of super will call CalculateValuesInRangeone
+        """
         self.stepSize = step
         super().__init__(min, max)
 
-    #override range value calculations
+    #-------------------------------------------------------------------------------------------------------------
+    #                                                P U B L I C
+    #-------------------------------------------------------------------------------------------------------------
+
     def CalculateValuesInRange(self):
-         if(self.stepSize > 0):
+        """
+           Purpose: Calculate values in the range using the numpy arange way (based on a stepsize)
+           Inputs:  None
+           Outputs: Sets the self.rangeValues list
+           Returns: None
+           Notes:   None
+        """
+        if(self.stepSize > 0):
             self.rangeValues = arange(self.rangeMin, self.rangeMax, self.stepSize).tolist()
