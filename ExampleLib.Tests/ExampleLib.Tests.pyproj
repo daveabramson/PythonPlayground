@@ -25,6 +25,9 @@
     <Compile Include="TestEvenCountRangeSource.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="TestStepRangeSource.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ExampleLib\ExampleLib.pyproj">

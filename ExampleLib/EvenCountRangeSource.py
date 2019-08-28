@@ -15,5 +15,4 @@ class EvenCountRangeSource(RangeSource):
     #override range value calculations
     def CalculateValuesInRange(self):
         if(self.countOfValues > 0):
-            npvals = linspace(self.rangeMin, self.rangeMax, self.countOfValues, self.isClosedInterval)
-            self.rangeValues = npvals.tolist()
+            self.rangeValues = linspace(self.rangeMin, self.rangeMax, self.countOfValues, self.isClosedInterval).tolist()
