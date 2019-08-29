@@ -9,6 +9,13 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ExampleLib", "ExampleLib\Ex
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ExampleLib.Tests", "ExampleLib.Tests\ExampleLib.Tests.pyproj", "{89A4B092-998B-464C-ACC5-0B89965C6A62}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "SuperSimpleGui", "SuperSimpleGui\SuperSimpleGui.pyproj", "{3A28765C-D74A-4018-BFBA-51FE23B3E253}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{17A5F589-DF8D-4708-BD75-B57907039F64}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +28,8 @@ Global
 		{0D098477-B85D-4487-9487-60E4762962AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89A4B092-998B-464C-ACC5-0B89965C6A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{89A4B092-998B-464C-ACC5-0B89965C6A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A28765C-D74A-4018-BFBA-51FE23B3E253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A28765C-D74A-4018-BFBA-51FE23B3E253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
