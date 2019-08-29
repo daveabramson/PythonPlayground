@@ -12,11 +12,14 @@ class SuperSimpleMainWindow(QtWidgets.QMainWindow, SuperSimpleMainWindowUi.Ui_Ma
         self.btnBrowse.clicked.connect(self.BrowseFolder)
         self.listWidget.itemClicked.connect(self.DisplayItem)
 
+    #THEN - add a button that opens another form
     def BrowseFolder(self):
         self.listWidget.clear()
         directory = QtWidgets.QFileDialog.getExistingDirectory(self, "Pick a folder")
         if directory:
             self.listWidget.addItems(os.listdir(directory))
+            count = self.listWidget.count()
+            self.lblItemCount.setText("Items: " + str(count))
 
     def DisplayItem(self):
         msgBox = QtWidgets.QMessageBox(None)
