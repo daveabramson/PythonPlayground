@@ -16,7 +16,7 @@ Things that I learned while creating this project:
 7. Multi-line statements - continue to the next line with \ (just like a C/C++ macro)
 8. Private methods are defined by double underscore in front of the name (ex: def __privateFunc(self))
 9. Looping through two lists in parallel using the zip() function (see TestCosineListMaker.py)
-10.Here is one way to create a form and use it. It assumes using PySide2.
+10.Here is one way to create a form and use it. It assumes using PySide2. (https://nikolak.com/pyqt-qt-designer-getting-started/)
    a. Use designer.exe to drag and drop stuff onto a form
    b. Save that to a .ui file (via save in designer.exe)
    c. convert the .ui file to a .py file with the pyside2-uic tool
