@@ -1,6 +1,6 @@
 import unittest
-from StepRangeSource import StepRangeSource
-from EvenCountRangeSource import EvenCountRangeSource
+from ExampleLib.StepRangeSource import StepRangeSource
+from ExampleLib.EvenCountRangeSource import EvenCountRangeSource
 from math import pi
 import coslist
 

@@ -1,6 +1,6 @@
 from PySide2 import QtWidgets
 import sys
-from SuperSimpleMainWindow import SuperSimpleMainWindow
+from SuperSimpleGui.SuperSimpleMainWindow import SuperSimpleMainWindow
 
 
 def main():

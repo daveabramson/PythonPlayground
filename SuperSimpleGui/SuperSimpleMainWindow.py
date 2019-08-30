@@ -1,7 +1,7 @@
 from PySide2 import QtWidgets
-import SuperSimpleMainWindowUi
+from SuperSimpleGui import SuperSimpleMainWindowUi
 import os
-from DifferentWindow import DifferentWindow
+from SuperSimpleGui.DifferentWindow import DifferentWindow
 
 
 class SuperSimpleMainWindow(QtWidgets.QMainWindow, SuperSimpleMainWindowUi.Ui_MainWindow):

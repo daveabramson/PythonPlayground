@@ -1,9 +1,9 @@
 from math import pi
 import numpy as np     # installed with matplotlib
 #import matplotlib.pyplot as plt
-from coslist import coslist
-from StepRangeSource import StepRangeSource
-from EvenCountRangeSource import EvenCountRangeSource
+from ExampleLib.coslist import coslist
+from ExampleLib.StepRangeSource import StepRangeSource
+from ExampleLib.EvenCountRangeSource import EvenCountRangeSource
 
 
 def main():
@@ -15,7 +15,7 @@ def main():
     # Calculate cosines of some angles given in degrees
     degCosListMaker = coslist()
     #degCosList, degAngles = cosListMaker.CosinesOfDegreeRange(EvenCountRangeSource(0, 360, 5))
-    degCosList, degAngles = cosListMaker.CosinesOfDegreeRange(EvenCountRangeSource(0, 360, 37))
+    degCosList, degAngles = degCosListMaker.CosinesOfDegreeRange(EvenCountRangeSource(0, 360, 37))
 
 
     print("cosines of angles in radians")

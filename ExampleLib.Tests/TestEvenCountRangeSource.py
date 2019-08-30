@@ -1,5 +1,5 @@
 import unittest
-from EvenCountRangeSource import EvenCountRangeSource
+from ExampleLib.EvenCountRangeSource import EvenCountRangeSource
 
 class TestEvenCountRangeSource(unittest.TestCase):
 

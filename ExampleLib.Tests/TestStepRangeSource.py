@@ -1,7 +1,7 @@
 import unittest
-from StepRangeSource import StepRangeSource
+from ExampleLib.StepRangeSource import StepRangeSource
 
-class MyTestClass(unittest.TestCase):
+class TestStepRangeSource(unittest.TestCase):
 
     def test_GetRange_GivenStepSize0_RaisesRuntimeError(self):
         #Arrange

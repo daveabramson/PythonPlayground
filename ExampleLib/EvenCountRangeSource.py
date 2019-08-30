@@ -1,4 +1,4 @@
-from RangeSource import RangeSource
+from ExampleLib.RangeSource import RangeSource
 from numpy import linspace
 
 class EvenCountRangeSource(RangeSource):

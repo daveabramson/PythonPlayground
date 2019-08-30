@@ -1,5 +1,5 @@
 import math
-from RangeSource import RangeSource
+from ExampleLib.RangeSource import RangeSource
 
 class coslist(object):
     """

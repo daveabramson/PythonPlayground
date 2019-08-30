@@ -1,5 +1,5 @@
 from PySide2 import QtWidgets
-import DifferentWindowUi
+from SuperSimpleGui import DifferentWindowUi
 
 
 class DifferentWindow(QtWidgets.QDialog, DifferentWindowUi.Ui_frmDifferentWindow):
