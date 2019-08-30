@@ -6,7 +6,7 @@ from ExampleLib.StepRangeSource import StepRangeSource
 from ExampleLib.EvenCountRangeSource import EvenCountRangeSource
 
 
-def main():
+def ConsoleApp():
     
     # Calculate cosines of some angles given in radians
     cosListMaker = coslist()
@@ -34,4 +34,5 @@ def main():
     #plt.plot(x, np.cos(x), 'b')
     #plt.show()
 
-main()
+if __name__ == '__main__':
+    ConsoleApp()
