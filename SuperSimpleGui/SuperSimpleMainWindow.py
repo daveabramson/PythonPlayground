@@ -1,6 +1,7 @@
 from PySide2 import QtWidgets
 import SuperSimpleMainWindowUi
 import os
+from DifferentWindow import DifferentWindow
 
 
 class SuperSimpleMainWindow(QtWidgets.QMainWindow, SuperSimpleMainWindowUi.Ui_MainWindow):
@@ -11,8 +12,8 @@ class SuperSimpleMainWindow(QtWidgets.QMainWindow, SuperSimpleMainWindowUi.Ui_Ma
         self.setupUi(self)
         self.btnBrowse.clicked.connect(self.BrowseFolder)
         self.listWidget.itemClicked.connect(self.DisplayItem)
+        self.btnOpenDiffForm.clicked.connect(self.OpenDiffForm)
 
-    #THEN - add a button that opens another form
     def BrowseFolder(self):
         self.listWidget.clear()
         directory = QtWidgets.QFileDialog.getExistingDirectory(self, "Pick a folder")
@@ -27,3 +28,6 @@ class SuperSimpleMainWindow(QtWidgets.QMainWindow, SuperSimpleMainWindowUi.Ui_Ma
         msgBox.setText(self.listWidget.currentItem().text())
         msgBox.exec_()
 
+    def OpenDiffForm(self):
+        diffForm = DifferentWindow(self)
+        diffForm.exec_()

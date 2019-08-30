@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'SuperSimpleMainWindow.ui',
 # licensing of 'SuperSimpleMainWindow.ui' applies.
 #
-# Created: Thu Aug 29 17:13:00 2019
+# Created: Thu Aug 29 19:28:27 2019
 #      by: pyside2-uic  running on PySide2 5.13.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -27,6 +27,9 @@ class Ui_MainWindow(object):
         self.btnBrowse = QtWidgets.QPushButton(self.centralwidget)
         self.btnBrowse.setObjectName("btnBrowse")
         self.verticalLayout.addWidget(self.btnBrowse)
+        self.btnOpenDiffForm = QtWidgets.QPushButton(self.centralwidget)
+        self.btnOpenDiffForm.setObjectName("btnOpenDiffForm")
+        self.verticalLayout.addWidget(self.btnOpenDiffForm)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -36,4 +39,5 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QtWidgets.QApplication.translate("MainWindow", "MainWindow", None, -1))
         self.lblItemCount.setText(QtWidgets.QApplication.translate("MainWindow", "Items: 0", None, -1))
         self.btnBrowse.setText(QtWidgets.QApplication.translate("MainWindow", "Pick a folder", None, -1))
+        self.btnOpenDiffForm.setText(QtWidgets.QApplication.translate("MainWindow", "Open a Different Form", None, -1))
 

@@ -21,6 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DifferentWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DifferentWindowUi.py" />
     <Compile Include="main.py" />
     <Compile Include="SuperSimpleMainWindow.py">
       <SubType>Code</SubType>

@@ -32,6 +32,13 @@
       </property>
      </widget>
     </item>
+    <item>
+     <widget class="QPushButton" name="btnOpenDiffForm">
+      <property name="text">
+       <string>Open a Different Form</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
  </widget>
