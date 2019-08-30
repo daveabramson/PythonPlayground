@@ -24,3 +24,12 @@ Things that I learned while creating this project:
       overwritten whenever changes are made).
 11.designer.exe is installed with pyside2 at the root
 12.pyside2-uic is installed under <pythonroot>\Scripts (where pip is)
+13. __init__.py in every directory containing .py files in the project allows them to be imported
+directories. This allows the code files to be nicely structured
+14. A .py at the root of the project (above all sub-directories contianing py files) can be used to 
+start executing a program from a regular terminal that is entirely contained within the sub directories (see runconsoleapp.py and runsimpleguiapp.py)
+   EX: python runconsoleapp.py
+   - that will run the console app in the terminal, but all of the source is contained in sub-dirs
+15. The following extensions for VS Code are useful 
+   a. Git History
+   b. Git Lens (more functionality that Git History)
