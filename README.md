@@ -33,3 +33,5 @@ start executing a program from a regular terminal that is entirely contained wit
 15. The following extensions for VS Code are useful 
    a. Git History
    b. Git Lens (more functionality that Git History)
+16. The Qt for Python extension lets you add a form, or open one (.ui) in the designer that you 
+set in the extension settings. You can make visual edits there, save, then return to visual studio code. Then you can right click the .ui file and compile it to a python file. The converted python file comes out in the output window. It is best to clear the output first, then you can just select all in the output window, copy, select all in the .py file and paste. There, now your changes are in the python version.
