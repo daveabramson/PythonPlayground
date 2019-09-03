@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'c:\PSI\ToysnSamples\PythonPlayground\SuperSimpleGui\SuperSimpleMainWindow.ui',
 # licensing of 'c:\PSI\ToysnSamples\PythonPlayground\SuperSimpleGui\SuperSimpleMainWindow.ui' applies.
 #
-# Created: Fri Aug 30 13:54:32 2019
+# Created: Tue Sep  3 16:14:37 2019
 #      by: pyside2-uic  running on PySide2 5.13.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -42,6 +42,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.tabCosineList)
         self.verticalLayout_5.setObjectName("verticalLayout_5")
         self.cosListView = QtWidgets.QListView(self.tabCosineList)
+        self.cosListView.setViewMode(QtWidgets.QListView.ListMode)
         self.cosListView.setObjectName("cosListView")
         self.verticalLayout_5.addWidget(self.cosListView)
         self.groupBox = QtWidgets.QGroupBox(self.tabCosineList)
@@ -85,9 +86,9 @@ class Ui_MainWindow(object):
         self.spinCountStep.setProperty("value", 3.0)
         self.spinCountStep.setObjectName("spinCountStep")
         self.gridLayout.addWidget(self.spinCountStep, 2, 0, 1, 1)
-        self.label_5 = QtWidgets.QLabel(self.widget)
-        self.label_5.setObjectName("label_5")
-        self.gridLayout.addWidget(self.label_5, 2, 1, 1, 1)
+        self.lblCountStep = QtWidgets.QLabel(self.widget)
+        self.lblCountStep.setObjectName("lblCountStep")
+        self.gridLayout.addWidget(self.lblCountStep, 2, 1, 1, 1)
         self.verticalLayout_5.addWidget(self.widget)
         self.groupBox_3 = QtWidgets.QGroupBox(self.tabCosineList)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
@@ -133,7 +134,7 @@ class Ui_MainWindow(object):
         self.radDegrees.setText(QtWidgets.QApplication.translate("MainWindow", "Degrees", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("MainWindow", "Range Max", None, -1))
         self.label.setText(QtWidgets.QApplication.translate("MainWindow", "Range Min", None, -1))
-        self.label_5.setText(QtWidgets.QApplication.translate("MainWindow", "Counts", None, -1))
+        self.lblCountStep.setText(QtWidgets.QApplication.translate("MainWindow", "Counts", None, -1))
         self.groupBox_3.setTitle(QtWidgets.QApplication.translate("MainWindow", "Range Definition Method", None, -1))
         self.radSteps.setText(QtWidgets.QApplication.translate("MainWindow", "Steps", None, -1))
         self.radCounts.setText(QtWidgets.QApplication.translate("MainWindow", "Counts", None, -1))

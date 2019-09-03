@@ -57,7 +57,11 @@
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_5">
         <item>
-         <widget class="QListView" name="cosListView"/>
+         <widget class="QListView" name="cosListView">
+          <property name="viewMode">
+           <enum>QListView::ListMode</enum>
+          </property>
+         </widget>
         </item>
         <item>
          <widget class="QGroupBox" name="groupBox">
@@ -131,7 +135,7 @@
             </widget>
            </item>
            <item row="2" column="1">
-            <widget class="QLabel" name="label_5">
+            <widget class="QLabel" name="lblCountStep">
              <property name="text">
               <string>Counts</string>
              </property>
