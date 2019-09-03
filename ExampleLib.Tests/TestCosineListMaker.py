@@ -2,14 +2,14 @@ import unittest
 from ExampleLib.StepRangeSource import StepRangeSource
 from ExampleLib.EvenCountRangeSource import EvenCountRangeSource
 from math import pi
-import coslist
+from ExampleLib.coslist import coslist
 
 class TestCosineListMaker(unittest.TestCase):
 
     def test_CosinesOfRadianRange_Given0Through2piCountRange_ReturnsCosMax0Min0Max(self):
         #Arrange
         rangeSource = EvenCountRangeSource(0, 2*pi, 5)
-        cosListMaker = coslist.coslist()
+        cosListMaker = coslist()
         expectedCosines = [1,0,-1,0,1]
 
     
@@ -27,7 +27,7 @@ class TestCosineListMaker(unittest.TestCase):
     def test_CosinesOfRadianRange_Given0Through2piInHalfpiSteps_ReturnsCosMax0Min0Max(self):
         #Arrange
         rangeSource = StepRangeSource(0, 2.5*pi, pi/2)
-        cosListMaker = coslist.coslist()
+        cosListMaker = coslist()
         expectedCosines = [1,0,-1,0,1]
 
     
@@ -45,7 +45,7 @@ class TestCosineListMaker(unittest.TestCase):
     def test_CosinesOfDegreeRange_Given0Through360CountRange_ReturnsCosMax0Min0Max(self):
         #Arrange
         rangeSource = EvenCountRangeSource(0, 360, 5)
-        cosListMaker = coslist.coslist()
+        cosListMaker = coslist()
         expectedCosines = [1,0,-1,0,1]
 
     
@@ -64,7 +64,7 @@ class TestCosineListMaker(unittest.TestCase):
     def test_CosinesOfDegreeRange_Given0Through360In90Steps_ReturnsCosMax0Min0Max(self):
         #Arrange
         rangeSource = StepRangeSource(0, 360+90, 90)
-        cosListMaker = coslist.coslist()
+        cosListMaker = coslist()
         expectedCosines = [1,0,-1,0,1]
 
     
