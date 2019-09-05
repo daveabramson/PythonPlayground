@@ -126,3 +126,5 @@ class SuperSimpleMainWindow(QtWidgets.QMainWindow, SuperSimpleMainWindowUi.Ui_Ma
         # collect values in form and create range source
         # call to calculate cosines
         # format the output into the list view
+
+        # JUST TRIGGER THE ACTION
