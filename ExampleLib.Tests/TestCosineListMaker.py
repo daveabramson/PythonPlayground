@@ -10,7 +10,7 @@ class TestCosineListMaker(unittest.TestCase):
         #Arrange
         rangeSource = EvenCountRangeSource(0, 2*pi, 5)
         cosListMaker = coslist()
-        expectedCosines = [1,0,-1,0,1]
+        expectedCosines = [1,0,-1,0,1,2]
 
     
         #Act

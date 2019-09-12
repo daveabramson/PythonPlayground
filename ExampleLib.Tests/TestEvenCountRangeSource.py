@@ -14,7 +14,7 @@ class TestEvenCountRangeSource(unittest.TestCase):
 
 
         #Assert (another one)
-        self.assertEqual('there are no values in the range', str(context.exception))
+        self.assertEqual('there are no values in the range poop', str(context.exception))
     #end def
 
 

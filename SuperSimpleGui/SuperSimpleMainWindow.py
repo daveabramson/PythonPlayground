@@ -121,6 +121,8 @@ class SuperSimpleMainWindow(QtWidgets.QMainWindow, SuperSimpleMainWindowUi.Ui_Ma
         #   - implement header data to return Angle(unit), Cosine
         #   - alternatively the QAbstractListModel could be used, and the datadisplayrole could
         #     return data formatted as cos(y)=x where y is the angle and x is the cosine
+        #     see here: https://doc.qt.io/qt-5/modelview.html
+        
 
         # clear the list
         # collect values in form and create range source
